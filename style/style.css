@@ -6,20 +6,21 @@
     padding: 0;
 }
 
-.btn{
-  background: rgba(82, 195, 3, 1);
-  color: rgb(255,255,255);
-  padding: 14px 18px 14px 18px;
-  font-weight: 700;
-  line-height: 1.5;
-  /* Best practice: সাধারণত 1.5 বা 1.6 ব্যবহার করলে লেখা সুন্দর ও readable হয়। */
-  text-align: center;
-  border-radius: 8px;
-  border:none;
+.btn {
+    background: rgba(82, 195, 3, 1);
+    color: rgb(255, 255, 255);
+    padding: 14px 18px 14px 18px;
+    font-weight: 700;
+    line-height: 1.5;
+    /* Best practice: সাধারণত 1.5 বা 1.6 ব্যবহার করলে লেখা সুন্দর ও readable হয়। */
+    text-align: center;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
 }
 
-.btn-container{
-     text-align: center;
+.btn-container {
+    text-align: center;
 }
 
 /* hero section style Start */
@@ -31,7 +32,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 #hero .hero-content {
@@ -39,8 +40,8 @@
 
 }
 
-#hero .hero-content .subtitle{
-    color:rgb(255,255,255);
+#hero .hero-content .subtitle {
+    color: rgb(255, 255, 255);
     font-family: Work Sans;
     font-size: 18px;
     font-weight: 500;
@@ -50,38 +51,102 @@
     line-height: 1.5 বা 1.6 → পড়তে আরামদায়ক
     line-height: 2 → অনেক বেশি ফাঁকা */
 
-    opacity: 0.7;  
-     /* Opacity এর value হয় 0 থেকে 1 এর মধ্যে:
+    opacity: 0.7;
+    /* Opacity এর value হয় 0 থেকে 1 এর মধ্যে:
      opacity: 1 → পুরোপুরি দেখা যাবে (default)
      opacity: 0.7 → একটু ফিকে
      opacity: 0.5 → অর্ধেক স্বচ্ছ
      opacity: 0 → একেবারে দেখা যাবে না */
-     
-     text-align: center;
-     margin-bottom: 10px;
-   
+
+    text-align: center;
+    margin-bottom: 10px;
+
 }
 
-#hero .hero-content .title{
-    color:rgb(255,255,255);
+#hero .hero-content .title {
+    color: rgb(255, 255, 255);
     font-family: Work Sans;
     font-size: 27px;
     font-weight: 700;
     line-height: 1.5;
-   /* Best practice: সাধারণত 1.5 বা 1.6 ব্যবহার করলে লেখা সুন্দর ও readable হয়। */
+    /* Best practice: সাধারণত 1.5 বা 1.6 ব্যবহার করলে লেখা সুন্দর ও readable হয়। */
     text-align: center;
     margin-bottom: 24px;
 }
 
-#hero .hero-content .description{
-    color:rgb(255,255,255);
+#hero .hero-content .description {
+    color: rgb(255, 255, 255);
     font-family: Work Sans;
     font-size: 12px;
     font-weight: 500;
-    line-height: 1.5; 
+    line-height: 1.5;
     /* Best practice: সাধারণত 1.5 বা 1.6 ব্যবহার করলে লেখা সুন্দর ও readable হয়। */
     text-align: center;
     opacity: 0.5;
     margin-bottom: 32px;
 }
+
 /* hero section style end */
+
+#card-box {
+    width: 581px;
+    margin: 100px auto;
+    /* margin 50px means top and bottom took 50px margin and for left and right it took auto means keep middle from both side */
+}
+
+#card-box .title {
+    font-family: Work Sans;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 1.5;
+    /* Best practice: সাধারণত 1.5 বা 1.6 ব্যবহার করলে লেখা সুন্দর ও readable হয়। */
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+#card-box .subtitle {
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6;
+
+    /* line-height: 1 → লাইনের মাঝে খুব কম ফাঁকা
+    line-height: 1.5 বা 1.6 → পড়তে আরামদায়ক
+    line-height: 2 → অনেক বেশি ফাঁকা */
+
+    opacity: 0.6;
+    /* Opacity এর value হয় 0 থেকে 1 এর মধ্যে:
+     opacity: 1 → পুরোপুরি দেখা যাবে (default)
+     opacity: 0.7 → একটু ফিকে
+     opacity: 0.5 → অর্ধেক স্বচ্ছ
+     opacity: 0 → একেবারে দেখা যাবে না */
+
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card-container{
+    margin-top: 30px;
+    display: flex;
+    /* gap: 10px; */
+    justify-content: space-between;
+    gap: 50px;
+    font-family: Work Sans;
+}
+.card{
+    max-width:250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.card .image-box img{
+    width: 100%;
+}
+
+.card .shop{
+    background-color: #52C30326;
+    padding: 10px 16px 10px 16px;
+}
+
