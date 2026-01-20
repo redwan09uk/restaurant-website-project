@@ -6,23 +6,23 @@
     padding: 0;
 }
 
-.btn {
-    padding: 14px 18px 14px 18px;
-    font-style: SemiBold;
-    border-radius: 8px;
-    background: rgba(82, 195, 3, 1);
-    color: rgba(255, 255, 255, 1);
-    font-family: Work Sans;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0%;
-    text-align: center;
-    border: none;
+.btn{
+  background: rgba(82, 195, 3, 1);
+  color: rgb(255,255,255);
+  padding: 14px 18px 14px 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  /* Best practice: সাধারণত 1.5 বা 1.6 ব্যবহার করলে লেখা সুন্দর ও readable হয়। */
+  text-align: center;
+  border-radius: 8px;
+  border:none;
 }
+
 .btn-container{
-    text-align: center;
+     text-align: center;
 }
+
+/* hero section style Start */
 #hero {
     height: 405px;
     background-image: linear-gradient(0deg, rgba(9.2, 8.93, 8.93, 1) 3.482%, rgba(16, 16, 16, 0) 101.632%), url(../assets/hero-bg.png);
@@ -31,48 +31,57 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
 }
 
 #hero .hero-content {
-    width: 440px;
+    width: 450px;
 
 }
 
-#hero .hero-content .subtitle {
-    color: rgba(255, 255, 255, 1);
+#hero .hero-content .subtitle{
+    color:rgb(255,255,255);
     font-family: Work Sans;
-    font-style: Bold;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 40px;
-    letter-spacing: 0%;
-    text-align: center;
-    opacity: 0.8;
-    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+
+    /* line-height: 1 → লাইনের মাঝে খুব কম ফাঁকা
+    line-height: 1.5 বা 1.6 → পড়তে আরামদায়ক
+    line-height: 2 → অনেক বেশি ফাঁকা */
+
+    opacity: 0.7;  
+     /* Opacity এর value হয় 0 থেকে 1 এর মধ্যে:
+     opacity: 1 → পুরোপুরি দেখা যাবে (default)
+     opacity: 0.7 → একটু ফিকে
+     opacity: 0.5 → অর্ধেক স্বচ্ছ
+     opacity: 0 → একেবারে দেখা যাবে না */
+     
+     text-align: center;
+     margin-bottom: 10px;
+   
 }
 
-#hero .hero-content .title {
-    color: rgba(255, 255, 255, 1);
+#hero .hero-content .title{
+    color:rgb(255,255,255);
     font-family: Work Sans;
-    font-style: Bold;
-    font-size: 30px;
+    font-size: 27px;
     font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 0%;
+    line-height: 1.5;
+   /* Best practice: সাধারণত 1.5 বা 1.6 ব্যবহার করলে লেখা সুন্দর ও readable হয়। */
     text-align: center;
-    margin-bottom: 14px;
+    margin-bottom: 24px;
 }
 
-#hero .hero-content .description {
-    color: rgba(255, 255, 255, 1);
+#hero .hero-content .description{
+    color:rgb(255,255,255);
     font-family: Work Sans;
-    font-style: Medium;
     font-size: 12px;
-    font-weight: 300;
-    line-height: 18px;
-    letter-spacing: 0%;
+    font-weight: 500;
+    line-height: 1.5; 
+    /* Best practice: সাধারণত 1.5 বা 1.6 ব্যবহার করলে লেখা সুন্দর ও readable হয়। */
     text-align: center;
-    opacity: 0.7;
+    opacity: 0.5;
     margin-bottom: 32px;
 }
+/* hero section style end */
