@@ -279,15 +279,17 @@
     justify-content: space-evenly;
     justify-items: center;
     margin-top: 30px;
+    cursor: pointer;
     
  }
 
  .footer-final{
     font-family: Work Sans;
-    font-size: 18px;
+    font-size: 17px;
     text-align: center;
-    color:darkgreen;
-    font-weight: 500;
+    color:firebrick;
+    font-weight: 400;
     padding-bottom: 30px;
+    font-style: italic;
  }
 /* Footer Section start here */
