@@ -88,6 +88,8 @@
 
 /* hero section style end */
 
+/* Card section style start here */
+
 #card-box {
     width: 581px;
     margin: 100px auto;
@@ -109,7 +111,6 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 1.6;
-
     /* line-height: 1 → লাইনের মাঝে খুব কম ফাঁকা
     line-height: 1.5 বা 1.6 → পড়তে আরামদায়ক
     line-height: 2 → অনেক বেশি ফাঁকা */
@@ -125,7 +126,7 @@
     margin-bottom: 10px;
 }
 
-.card-container{
+.card-container {
     margin-top: 30px;
     display: flex;
     /* gap: 10px; */
@@ -133,20 +134,87 @@
     gap: 50px;
     font-family: Work Sans;
 }
-.card{
-    max-width:250px;
+
+.card {
+    max-width: 250px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     justify-content: center;
     align-items: center;
 }
-.card .image-box img{
+
+.card .image-box img {
     width: 100%;
 }
 
-.card .shop{
+.card .shop {
     background-color: #52C30326;
     padding: 10px 16px 10px 16px;
 }
 
+/* Card section style end here */
+
+
+/* About us section start here */
+
+#about-us {
+    width: 855px;
+    margin: 100px auto;
+}
+
+#about-us .about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#about-info .about-title {
+    font-family: Work Sans;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.2;
+    /* line-height: 1 → লাইনের মাঝে খুব কম ফাঁকা
+    line-height: 1.5 বা 1.6 → পড়তে আরামদায়ক
+    line-height: 2 → অনেক বেশি ফাঁকা */
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+#about-info .about-description {
+    font-family: Work Sans;
+    font-size: 14px;
+    letter-spacing: 1.5;
+    opacity: 0.7;
+    text-align: center;
+    margin-bottom: 48px;
+    
+
+}
+
+#about-info .about-follow{
+    text-align: center;
+    margin-bottom: 32px;
+        
+}
+
+.about-follow hr{
+    margin: 15px;
+}
+   
+.about-follow span{
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#about-info .about-icon{
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer; 
+
+}
+
+/* About us section style end here */
